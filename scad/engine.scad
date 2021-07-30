@@ -12,7 +12,12 @@ module engine_mockup(px=0,py=0,pz=0, rx=0,ry=0,rz=0, sx=1,sy=1,sz=1, mx=0,my=0,m
     scale([sx,sy,sz])
     mirror([mx,my,mz]){   
         blMotor2212(50,0,0, 0,90,0);
-        rotate([60,0,0])            
-            prop8040_3(70,0,0, 0,90,0);        
+        rotate([60,0,0])
+            if (_ps==204)
+                prop8040_3(70,0,0, 0,90,0);
+            else if(_ps==178)
+                prop7040_3(70,0,0, 0,90,0);
+            else if(_ps==130)
+                prop5147_3(70,0,0, 0,90,0);
     }//transform
 }//module
