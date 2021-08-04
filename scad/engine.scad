@@ -19,5 +19,8 @@ module engine_mockup(px=0,py=0,pz=0, rx=0,ry=0,rz=0, sx=1,sy=1,sz=1, mx=0,my=0,m
                 prop7040_3(70,0,0, 0,90,0);
             else if(_ps==130)
                 prop5147_3(70,0,0, 0,90,0);
+            //if
+        //w28 h35    
+        yCyl(0.14*_ps, 0.65*_ps, -0.04*_ps,0,0, 0,90,0);    
     }//transform
 }//module
