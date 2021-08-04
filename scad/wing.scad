@@ -1,8 +1,8 @@
 include <_std.scad>
 include <../../lib/lib2.scad>
-//include <../../lib/lib2/lib2_motor.scad>
-//include <../../lib/lib2/lib2_prop.scad>
-include <../../lib/lib2/lib2_servo.scad>
+//include <../../lib/lib2/ext/motor.scad>
+//include <../../lib/lib2/ext/prop.scad>
+include <../../lib/lib2/ext/servo.scad>
 
 //wing_mockup();
 
